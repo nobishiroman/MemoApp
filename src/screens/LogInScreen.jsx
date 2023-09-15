@@ -61,7 +61,7 @@ export default function LogInScreen(props) {
           textContentType="password"
         />
         <Button
-          label="Submit"
+          label="Login"
           // eslint-disable-next-line react/jsx-no-bind
           onPress={handlePress}
         />
