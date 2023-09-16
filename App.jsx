@@ -1,4 +1,5 @@
 // import React from 'react';
+import { LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 import firebase from 'firebase';
@@ -19,6 +20,8 @@ if (firebase.apps.length === 0) {
 }
 
 const Stack = createStackNavigator();
+// エラーを個別に無視する場合
+LogBox.ignoreLogs(['']);
 
 export default function App() {
   return (
